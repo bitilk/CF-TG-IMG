@@ -52,7 +52,7 @@ async function handleUpload(request) {
   const result = await uploadResponse.json();
   const imagePath = result[0].src;
   const imageUrl = new URL(request.url);
-  const customDomain = ""; // 自定义文件域名(不带https),备用域名也需要指向该项目,如果为空则使用当前域名
+  const customDomain = ""; // 自定义链接域名(不带https),也需要指向该项目.如果为空则使用当前域名
 
   if (customDomain) {
     imageUrl.hostname = customDomain;
