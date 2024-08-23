@@ -87,7 +87,7 @@ const htmlContent = `
             color: #ffffff;
         }
         .content {
-            margin-top: 10vh;
+            margin-top: 20vh;
         }
         .upload-btn-wrapper { 
             position: relative; 
